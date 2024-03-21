@@ -1,8 +1,9 @@
-# Projeto Integrador em Computação I (DRP03 – PJI110 -Sala 002- Grupo 003) 
+# Projeto Integrador em Computação I
+DRP03 – PJI110 -Sala 002- Grupo 003
 
 ## Desenvolvimento local
 
-Para subir os banco de dados MySQL localmente execute o seguinte comando:
+Para subir o banco de dados MySQL localmente execute o seguinte comando:
 
 ```sh
 $ docker compose up -d
