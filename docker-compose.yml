@@ -4,12 +4,13 @@ services:
     image: mysql:latest
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: mydatabase
+      MYSQL_DATABASE: projeto_integrador_db
       MYSQL_USER: myuser
       MYSQL_PASSWORD: mypassword
     ports:
       - "3306:3306"
     volumes:
+      - ./database/setup.sql:/docker-entrypoint-initdb.d/init.sql
       - mydb:/var/lib/mysql
     restart: always
 
