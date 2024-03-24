@@ -7,7 +7,7 @@
 
 ## Modelo Relacional do Banco de Dados
 
-![mr](image/mr_dataset_pi.png)
+![mr](image/diagrama_er_pi.png)
 
 
 ## Desenvolvimento local
