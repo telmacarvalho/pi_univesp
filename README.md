@@ -1,6 +1,10 @@
 # Projeto Integrador em Computação I
 **DRP03 – PJI110 -Sala 002- Grupo 003**
 
+## Prazos de entregas
+
+![calendario](image/calendario.png)
+
 ## Modelo Relacional do Banco de Dados
 
 ![mr](image/mr_dataset_pi.png)
