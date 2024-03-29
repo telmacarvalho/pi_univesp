@@ -14,5 +14,17 @@ services:
       - mydb:/var/lib/mysql
     restart: always
 
+  php:
+    build: .
+    volumes:
+      - ./www:/var/www/html
+    depends_on:
+      - mysql
+    links:
+      - mysql
+    ports:
+      - "3000:80"
+    restart: always
+
 volumes:
   mydb:
