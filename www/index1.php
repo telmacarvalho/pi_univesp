@@ -18,14 +18,15 @@ $sql = "SELECT table_name FROM information_schema.tables WHERE table_schema = '$
 
 $result = $conn->query($sql);
 
-if ($resu
-
+if ($result->num_rows > 0) {
+    // Output data of each row
+    while ($row = $result->fetch_assoc()) {
+        echo "Table Name: " . $row["TABLE_NAME"] . "<br>";
+    }
+} else {
+    echo "0 results";
+}
 $conn->close();
 
-// phpinfo();
-?>
-
-$conn->close();
-
-// phpinfo();
+phpinfo();
 ?>
