@@ -39,7 +39,6 @@ $sql_contato = "INSERT INTO contato (data_nascimento, telefone, `e-mail`, id_nom
                         (SELECT id FROM nome_completo WHERE nome = '$first_name' AND sobrenome = '$last_name'),
                         (SELECT id FROM endereco WHERE cep = '$cep' AND numero = '$numero'
                         ))";
-//
 
 if ($conn->query($sql_nome_completo) === TRUE && $conn->query($sql_endereco) === TRUE && $conn->query($sql_contato) === TRUE) {
     echo "Records inserted successfully";
