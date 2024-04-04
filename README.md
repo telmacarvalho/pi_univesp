@@ -18,13 +18,20 @@ Para subir o banco de dados MySQL localmente execute o seguinte comando:
 $ docker compose up -d
 ```
 
+Para encerrar o container execute o seguinte comando:
+
+```sh
+$ docker compose down
+```
+
 Concecte usando MySQL Workbench com as seguintes configurações:
 
 * Connection Name: Docker MySQL (or any name you prefer) 
 * Hostname: 127.0.0.1 (or the Docker host's IP if you're not running it locally)
 * Port: 3306
-* Username: myuser (or "root" if you want to use the root account)
-* Password: mypassword (or the root password if using the root account)
+* Username: root 
+* Password: rootpassword 
+* Default Schema: projeto_integrador_db
 
 ## Tecnologias utilizadas:
 
