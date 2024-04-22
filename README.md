@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -64,3 +65,47 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# Projeto Integrador em Computação I
+**DRP03 – PJI110 -Sala 002- Grupo 003**
+
+## Prazos de entregas
+
+![calendario](image/calendario.png)
+
+## Modelo Relacional do Banco de Dados
+
+![mr](image/diagrama_er_pi.png)
+
+
+## Desenvolvimento local
+
+Para subir o banco de dados MySQL localmente execute o seguinte comando:
+
+```sh
+$ docker compose up -d
+```
+
+Para encerrar o container execute o seguinte comando:
+
+```sh
+$ docker compose down
+```
+
+Concecte usando MySQL Workbench com as seguintes configurações:
+
+* Connection Name: Docker MySQL (or any name you prefer) 
+* Hostname: 127.0.0.1 (or the Docker host's IP if you're not running it locally)
+* Port: 3306
+* Username: root 
+* Password: rootpassword 
+* Default Schema: projeto_integrador_db
+
+## Tecnologias utilizadas:
+
+* Docker
+* MySQL
+* MySQL workbench
+* todo: inserir as tecnologias que serão usadas no projeto
+
+>>>>>>> 5bd94389eb2d7006a1b9c27ab781a130ed07e3d9
