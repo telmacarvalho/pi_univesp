@@ -106,6 +106,7 @@ Concecte usando MySQL Workbench com as seguintes configurações:
 * Docker
 * MySQL
 * MySQL workbench
+* Laravel
 * todo: inserir as tecnologias que serão usadas no projeto
 
 >>>>>>> 5bd94389eb2d7006a1b9c27ab781a130ed07e3d9
