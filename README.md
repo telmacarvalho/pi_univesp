@@ -99,7 +99,7 @@ Concecte usando MySQL Workbench com as seguintes configurações:
 * Port: 3306
 * Username: root 
 * Password: rootpassword 
-* Default Schema: projeto_integrador_db
+* Default Schema: drone_db
 
 ## Tecnologias utilizadas:
 
@@ -109,3 +109,5 @@ Concecte usando MySQL Workbench com as seguintes configurações:
 * todo: inserir as tecnologias que serão usadas no projeto
 
 >>>>>>> 5bd94389eb2d7006a1b9c27ab781a130ed07e3d9
+
+##Alteração: O banco de dados agora chama drone_db, não mais projeto_integrador_db
