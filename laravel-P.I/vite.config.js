@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite';
-import laravel from 'laravel-vite-plugin';
+import drone_db from 'drone_db-vite-plugin';
 
 export default defineConfig({
     plugins: [
-        laravel({
+        drone_db({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
         }),
