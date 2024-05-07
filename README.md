@@ -12,30 +12,39 @@
 
 ## Desenvolvimento local
 
-Para subir o banco de dados MySQL localmente execute o seguinte comando:
+Suba os containers:
 
 ```sh
 $ docker compose up -d
 ```
 
-Para encerrar o container execute o seguinte comando:
+Instale as dependencias:
+
+```sh
+$ docker compose exec composer install
+```
+
+Rode as migrations (cria as tabelas necessárias):
+
+```sh
+$ docker compose exec app php artisan migrate
+```
+
+Abra o browser e acesse o endereço abaixo:
+
+```
+http://localhost:8000
+```
+
+Ao final, caso deseje, derrube os containers:
 
 ```sh
 $ docker compose down
 ```
-
-Concecte usando MySQL Workbench com as seguintes configurações:
-
-* Connection Name: Docker MySQL (or any name you prefer) 
-* Hostname: 127.0.0.1 (or the Docker host's IP if you're not running it locally)
-* Port: 3306
-* Username: root 
-* Password: rootpassword 
-* Default Schema: projeto_integrador_db
 
 ## Tecnologias utilizadas:
 
 * Docker
 * MySQL
 * MySQL workbench
-* todo: inserir as tecnologias que serão usadas no projeto
+* Laravel
