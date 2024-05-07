@@ -553,7 +553,7 @@
             "homepage": "https://github.com/fruitcake/php-cors",
             "keywords": [
                 "cors",
-                "drone_db",
+                "laravel",
                 "symfony"
             ],
             "support": {
@@ -1046,16 +1046,16 @@
             "time": "2023-12-03T19:50:20+00:00"
         },
         {
-            "name": "drone_db/framework",
+            "name": "laravel/framework",
             "version": "v11.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/drone_db/framework.git",
+                "url": "https://github.com/laravel/framework.git",
                 "reference": "c1dc67c28811dc5be524a30b18f29ce62126716a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drone_db/framework/zipball/c1dc67c28811dc5be524a30b18f29ce62126716a",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/c1dc67c28811dc5be524a30b18f29ce62126716a",
                 "reference": "c1dc67c28811dc5be524a30b18f29ce62126716a",
                 "shasum": ""
             },
@@ -1075,8 +1075,8 @@
                 "fruitcake/php-cors": "^1.3",
                 "guzzlehttp/guzzle": "^7.8",
                 "guzzlehttp/uri-template": "^1.0",
-                "drone_db/prompts": "^0.1.18",
-                "drone_db/serializable-closure": "^1.3",
+                "laravel/prompts": "^0.1.18",
+                "laravel/serializable-closure": "^1.3",
                 "league/commonmark": "^2.2.1",
                 "league/flysystem": "^3.8.0",
                 "monolog/monolog": "^3.0",
@@ -1184,7 +1184,7 @@
                 "ext-redis": "Required to use the Redis cache and queue drivers (^4.0|^5.0).",
                 "fakerphp/faker": "Required to use the eloquent factory builder (^1.9.1).",
                 "filp/whoops": "Required for friendly error pages in development (^2.14.3).",
-                "drone_db/tinker": "Required to use the tinker console command (^2.0).",
+                "laravel/tinker": "Required to use the tinker console command (^2.0).",
                 "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^3.0).",
                 "league/flysystem-ftp": "Required to use the Flysystem FTP driver (^3.0).",
                 "league/flysystem-path-prefixing": "Required to use the scoped driver (^3.3).",
@@ -1235,32 +1235,32 @@
             "authors": [
                 {
                     "name": "Taylor Otwell",
-                    "email": "taylor@drone_db.com"
+                    "email": "taylor@laravel.com"
                 }
             ],
-            "description": "The drone_db Framework.",
-            "homepage": "https://drone_db.com",
+            "description": "The Laravel Framework.",
+            "homepage": "https://laravel.com",
             "keywords": [
                 "framework",
-                "drone_db"
+                "laravel"
             ],
             "support": {
-                "issues": "https://github.com/drone_db/framework/issues",
-                "source": "https://github.com/drone_db/framework"
+                "issues": "https://github.com/laravel/framework/issues",
+                "source": "https://github.com/laravel/framework"
             },
             "time": "2024-04-16T14:38:51+00:00"
         },
         {
-            "name": "drone_db/prompts",
+            "name": "laravel/prompts",
             "version": "v0.1.19",
             "source": {
                 "type": "git",
-                "url": "https://github.com/drone_db/prompts.git",
+                "url": "https://github.com/laravel/prompts.git",
                 "reference": "0ab75ac3434d9f610c5691758a6146a3d1940c18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drone_db/prompts/zipball/0ab75ac3434d9f610c5691758a6146a3d1940c18",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/0ab75ac3434d9f610c5691758a6146a3d1940c18",
                 "reference": "0ab75ac3434d9f610c5691758a6146a3d1940c18",
                 "shasum": ""
             },
@@ -1272,7 +1272,7 @@
             },
             "conflict": {
                 "illuminate/console": ">=10.17.0 <10.25.0",
-                "drone_db/framework": ">=10.17.0 <10.25.0"
+                "laravel/framework": ">=10.17.0 <10.25.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.5",
@@ -1294,7 +1294,7 @@
                     "src/helpers.php"
                 ],
                 "psr-4": {
-                    "drone_db\\Prompts\\": "src/"
+                    "Laravel\\Prompts\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1302,22 +1302,22 @@
                 "MIT"
             ],
             "support": {
-                "issues": "https://github.com/drone_db/prompts/issues",
-                "source": "https://github.com/drone_db/prompts/tree/v0.1.19"
+                "issues": "https://github.com/laravel/prompts/issues",
+                "source": "https://github.com/laravel/prompts/tree/v0.1.19"
             },
             "time": "2024-04-16T14:20:35+00:00"
         },
         {
-            "name": "drone_db/serializable-closure",
+            "name": "laravel/serializable-closure",
             "version": "v1.3.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/drone_db/serializable-closure.git",
+                "url": "https://github.com/laravel/serializable-closure.git",
                 "reference": "3dbf8a8e914634c48d389c1234552666b3d43754"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drone_db/serializable-closure/zipball/3dbf8a8e914634c48d389c1234552666b3d43754",
+                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/3dbf8a8e914634c48d389c1234552666b3d43754",
                 "reference": "3dbf8a8e914634c48d389c1234552666b3d43754",
                 "shasum": ""
             },
@@ -1338,7 +1338,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "drone_db\\SerializableClosure\\": "src/"
+                    "Laravel\\SerializableClosure\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1348,36 +1348,36 @@
             "authors": [
                 {
                     "name": "Taylor Otwell",
-                    "email": "taylor@drone_db.com"
+                    "email": "taylor@laravel.com"
                 },
                 {
                     "name": "Nuno Maduro",
-                    "email": "nuno@drone_db.com"
+                    "email": "nuno@laravel.com"
                 }
             ],
-            "description": "drone_db Serializable Closure provides an easy and secure way to serialize closures in PHP.",
+            "description": "Laravel Serializable Closure provides an easy and secure way to serialize closures in PHP.",
             "keywords": [
                 "closure",
-                "drone_db",
+                "laravel",
                 "serializable"
             ],
             "support": {
-                "issues": "https://github.com/drone_db/serializable-closure/issues",
-                "source": "https://github.com/drone_db/serializable-closure"
+                "issues": "https://github.com/laravel/serializable-closure/issues",
+                "source": "https://github.com/laravel/serializable-closure"
             },
             "time": "2023-11-08T14:08:06+00:00"
         },
         {
-            "name": "drone_db/tinker",
+            "name": "laravel/tinker",
             "version": "v2.9.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/drone_db/tinker.git",
+                "url": "https://github.com/laravel/tinker.git",
                 "reference": "502e0fe3f0415d06d5db1f83a472f0f3b754bafe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drone_db/tinker/zipball/502e0fe3f0415d06d5db1f83a472f0f3b754bafe",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/502e0fe3f0415d06d5db1f83a472f0f3b754bafe",
                 "reference": "502e0fe3f0415d06d5db1f83a472f0f3b754bafe",
                 "shasum": ""
             },
@@ -1399,15 +1399,15 @@
             },
             "type": "library",
             "extra": {
-                "drone_db": {
+                "laravel": {
                     "providers": [
-                        "drone_db\\Tinker\\TinkerServiceProvider"
+                        "Laravel\\Tinker\\TinkerServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "drone_db\\Tinker\\": "src/"
+                    "Laravel\\Tinker\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1417,19 +1417,19 @@
             "authors": [
                 {
                     "name": "Taylor Otwell",
-                    "email": "taylor@drone_db.com"
+                    "email": "taylor@laravel.com"
                 }
             ],
-            "description": "Powerful REPL for the drone_db framework.",
+            "description": "Powerful REPL for the Laravel framework.",
             "keywords": [
                 "REPL",
                 "Tinker",
-                "drone_db",
+                "laravel",
                 "psysh"
             ],
             "support": {
-                "issues": "https://github.com/drone_db/tinker/issues",
-                "source": "https://github.com/drone_db/tinker/tree/v2.9.0"
+                "issues": "https://github.com/laravel/tinker/issues",
+                "source": "https://github.com/laravel/tinker/tree/v2.9.0"
             },
             "time": "2024-01-04T16:10:04+00:00"
         },
@@ -1974,9 +1974,9 @@
                     "dev-master": "3.x-dev",
                     "dev-2.x": "2.x-dev"
                 },
-                "drone_db": {
+                "laravel": {
                     "providers": [
-                        "Carbon\\drone_db\\ServiceProvider"
+                        "Carbon\\Laravel\\ServiceProvider"
                     ]
                 },
                 "phpstan": {
@@ -2261,7 +2261,7 @@
             "require-dev": {
                 "ergebnis/phpstan-rules": "^2.2.0",
                 "illuminate/console": "^11.0.0",
-                "drone_db/pint": "^1.14.0",
+                "laravel/pint": "^1.14.0",
                 "mockery/mockery": "^1.6.7",
                 "pestphp/pest": "^2.34.1",
                 "phpstan/phpstan": "^1.10.59",
@@ -2271,9 +2271,9 @@
             },
             "type": "library",
             "extra": {
-                "drone_db": {
+                "laravel": {
                     "providers": [
-                        "Termwind\\drone_db\\TermwindServiceProvider"
+                        "Termwind\\Laravel\\TermwindServiceProvider"
                     ]
                 },
                 "branch-alias": {
@@ -5872,16 +5872,16 @@
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
-            "name": "drone_db/pint",
+            "name": "laravel/pint",
             "version": "v1.15.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/drone_db/pint.git",
+                "url": "https://github.com/laravel/pint.git",
                 "reference": "5f288b5e79938cc72f5c298d384e639de87507c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drone_db/pint/zipball/5f288b5e79938cc72f5c298d384e639de87507c6",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/5f288b5e79938cc72f5c298d384e639de87507c6",
                 "reference": "5f288b5e79938cc72f5c298d384e639de87507c6",
                 "shasum": ""
             },
@@ -5896,7 +5896,7 @@
                 "friendsofphp/php-cs-fixer": "^3.52.1",
                 "illuminate/view": "^10.48.4",
                 "larastan/larastan": "^2.9.2",
-                "drone_db-zero/framework": "^10.3.0",
+                "laravel-zero/framework": "^10.3.0",
                 "mockery/mockery": "^1.6.11",
                 "nunomaduro/termwind": "^1.15.1",
                 "pestphp/pest": "^2.34.5"
@@ -5923,7 +5923,7 @@
                 }
             ],
             "description": "An opinionated code formatter for PHP.",
-            "homepage": "https://drone_db.com",
+            "homepage": "https://laravel.com",
             "keywords": [
                 "format",
                 "formatter",
@@ -5932,22 +5932,22 @@
                 "php"
             ],
             "support": {
-                "issues": "https://github.com/drone_db/pint/issues",
-                "source": "https://github.com/drone_db/pint"
+                "issues": "https://github.com/laravel/pint/issues",
+                "source": "https://github.com/laravel/pint"
             },
             "time": "2024-04-02T14:28:47+00:00"
         },
         {
-            "name": "drone_db/sail",
+            "name": "laravel/sail",
             "version": "v1.29.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/drone_db/sail.git",
+                "url": "https://github.com/laravel/sail.git",
                 "reference": "8be4a31150eab3b46af11a2e7b2c4632eefaad7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drone_db/sail/zipball/8be4a31150eab3b46af11a2e7b2c4632eefaad7e",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/8be4a31150eab3b46af11a2e7b2c4632eefaad7e",
                 "reference": "8be4a31150eab3b46af11a2e7b2c4632eefaad7e",
                 "shasum": ""
             },
@@ -5968,15 +5968,15 @@
             ],
             "type": "library",
             "extra": {
-                "drone_db": {
+                "laravel": {
                     "providers": [
-                        "drone_db\\Sail\\SailServiceProvider"
+                        "Laravel\\Sail\\SailServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "drone_db\\Sail\\": "src/"
+                    "Laravel\\Sail\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -5986,17 +5986,17 @@
             "authors": [
                 {
                     "name": "Taylor Otwell",
-                    "email": "taylor@drone_db.com"
+                    "email": "taylor@laravel.com"
                 }
             ],
-            "description": "Docker files for running a basic drone_db application.",
+            "description": "Docker files for running a basic Laravel application.",
             "keywords": [
                 "docker",
-                "drone_db"
+                "laravel"
             ],
             "support": {
-                "issues": "https://github.com/drone_db/sail/issues",
-                "source": "https://github.com/drone_db/sail"
+                "issues": "https://github.com/laravel/sail/issues",
+                "source": "https://github.com/laravel/sail"
             },
             "time": "2024-03-20T20:09:31+00:00"
         },
@@ -6163,25 +6163,25 @@
                 "symfony/console": "^7.0.4"
             },
             "conflict": {
-                "drone_db/framework": "<11.0.0 || >=12.0.0",
+                "laravel/framework": "<11.0.0 || >=12.0.0",
                 "phpunit/phpunit": "<10.5.1 || >=12.0.0"
             },
             "require-dev": {
                 "larastan/larastan": "^2.9.2",
-                "drone_db/framework": "^11.0.0",
-                "drone_db/pint": "^1.14.0",
-                "drone_db/sail": "^1.28.2",
-                "drone_db/sanctum": "^4.0.0",
-                "drone_db/tinker": "^2.9.0",
+                "laravel/framework": "^11.0.0",
+                "laravel/pint": "^1.14.0",
+                "laravel/sail": "^1.28.2",
+                "laravel/sanctum": "^4.0.0",
+                "laravel/tinker": "^2.9.0",
                 "orchestra/testbench-core": "^9.0.0",
                 "pestphp/pest": "^2.34.1 || ^3.0.0",
                 "sebastian/environment": "^6.0.1 || ^7.0.0"
             },
             "type": "library",
             "extra": {
-                "drone_db": {
+                "laravel": {
                     "providers": [
-                        "NunoMaduro\\Collision\\Adapters\\drone_db\\CollisionServiceProvider"
+                        "NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider"
                     ]
                 },
                 "branch-alias": {
@@ -6214,8 +6214,8 @@
                 "console",
                 "error",
                 "handling",
-                "drone_db",
-                "drone_db-zero",
+                "laravel",
+                "laravel-zero",
                 "php",
                 "symfony"
             ],
@@ -7900,11 +7900,11 @@
             "keywords": [
                 "error",
                 "flare",
-                "drone_db",
+                "laravel",
                 "page"
             ],
             "support": {
-                "docs": "https://flareapp.io/docs/ignition-for-drone_db/introduction",
+                "docs": "https://flareapp.io/docs/ignition-for-laravel/introduction",
                 "forum": "https://twitter.com/flareappio",
                 "issues": "https://github.com/spatie/ignition/issues",
                 "source": "https://github.com/spatie/ignition"
@@ -7918,16 +7918,16 @@
             "time": "2024-04-16T08:49:17+00:00"
         },
         {
-            "name": "spatie/drone_db-ignition",
+            "name": "spatie/laravel-ignition",
             "version": "2.5.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/spatie/drone_db-ignition.git",
+                "url": "https://github.com/spatie/laravel-ignition.git",
                 "reference": "c93fcadcc4629775c839ac9a90916f07a660266f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/drone_db-ignition/zipball/c93fcadcc4629775c839ac9a90916f07a660266f",
+                "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/c93fcadcc4629775c839ac9a90916f07a660266f",
                 "reference": "c93fcadcc4629775c839ac9a90916f07a660266f",
                 "shasum": ""
             },
@@ -7959,12 +7959,12 @@
             },
             "type": "library",
             "extra": {
-                "drone_db": {
+                "laravel": {
                     "providers": [
-                        "Spatie\\drone_dbIgnition\\IgnitionServiceProvider"
+                        "Spatie\\LaravelIgnition\\IgnitionServiceProvider"
                     ],
                     "aliases": {
-                        "Flare": "Spatie\\drone_dbIgnition\\Facades\\Flare"
+                        "Flare": "Spatie\\LaravelIgnition\\Facades\\Flare"
                     }
                 }
             },
@@ -7973,7 +7973,7 @@
                     "src/helpers.php"
                 ],
                 "psr-4": {
-                    "Spatie\\drone_dbIgnition\\": "src"
+                    "Spatie\\LaravelIgnition\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -7987,19 +7987,19 @@
                     "role": "Developer"
                 }
             ],
-            "description": "A beautiful error page for drone_db applications.",
+            "description": "A beautiful error page for Laravel applications.",
             "homepage": "https://flareapp.io/ignition",
             "keywords": [
                 "error",
                 "flare",
-                "drone_db",
+                "laravel",
                 "page"
             ],
             "support": {
-                "docs": "https://flareapp.io/docs/ignition-for-drone_db/introduction",
+                "docs": "https://flareapp.io/docs/ignition-for-laravel/introduction",
                 "forum": "https://twitter.com/flareappio",
-                "issues": "https://github.com/spatie/drone_db-ignition/issues",
-                "source": "https://github.com/spatie/drone_db-ignition"
+                "issues": "https://github.com/spatie/laravel-ignition/issues",
+                "source": "https://github.com/spatie/laravel-ignition"
             },
             "funding": [
                 {
