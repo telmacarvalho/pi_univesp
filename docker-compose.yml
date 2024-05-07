@@ -4,7 +4,7 @@ services:
     image: mysql:latest
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: projeto_integrador_db
+      MYSQL_DATABASE: drone_db
       MYSQL_USER: myuser
       MYSQL_PASSWORD: mypassword
     ports:
@@ -14,17 +14,29 @@ services:
       - mydb:/var/lib/mysql
     restart: always
 
-  php:
-    build: .
+  app:
+    build:
+      args:
+        user: sammy
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    working_dir: /var/www/
     volumes:
-      - ./www:/var/www/html
+      - ./laravel-P.I:/var/www
     depends_on:
       - mysql
-    links:
-      - mysql
+
+  nginx:
+    image: nginx:alpine
+    container_name: travellist-nginx
+    restart: unless-stopped
     ports:
-      - "3000:80"
-    restart: always
+      - 8000:80
+    volumes:
+      - ./laravel-P.I:/var/www
+      - ./nginx:/etc/nginx/conf.d/
 
 volumes:
   mydb:
