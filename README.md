@@ -21,7 +21,7 @@ $ docker compose up -d
 Instale as dependencias:
 
 ```sh
-$ docker compose exec composer install
+$ docker compose exec app composer install
 ```
 
 Rode as migrations (cria as tabelas necessárias):
