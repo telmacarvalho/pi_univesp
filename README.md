@@ -29,7 +29,9 @@ Rode as migrations (cria as tabelas necessárias):
 ```sh
 $ docker compose exec app php artisan migrate
 ```
-
+```sh
+$ docker compose exec app php artisan key:generate
+```
 Abra o browser e acesse o endereço abaixo:
 
 ```
