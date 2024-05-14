@@ -15,12 +15,7 @@ services:
     restart: always
 
   app:
-    build:
-      args:
-        user: sammy
-        uid: 1000
-      context: ./
-      dockerfile: Dockerfile
+    build: .
     restart: unless-stopped
     working_dir: /var/www/
     volumes:
@@ -30,7 +25,6 @@ services:
 
   nginx:
     image: nginx:alpine
-    container_name: travellist-nginx
     restart: unless-stopped
     ports:
       - 8000:80
