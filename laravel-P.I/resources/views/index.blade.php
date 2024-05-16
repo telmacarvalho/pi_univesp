@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Cadastro de Novos Usuários</title>
+    <title>Agência Drone - Formulário de Cadastro de Novos Usuários</title>
     <link rel="stylesheet" href="{{ asset('styles/estilo.css') }}">
 </head>
 

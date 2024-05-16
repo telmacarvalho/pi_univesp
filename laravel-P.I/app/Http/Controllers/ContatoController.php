@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Contato;
 use App\Models\NomeCompleto;
+use App\Models\Endereco;
 
 class ContatoController extends Controller
 {
@@ -24,14 +25,14 @@ class ContatoController extends Controller
             'sobrenome' => 'required|string|max:255',
             'data_nascimento' => 'required|date',
             'email' => 'required|string|email|max:255|unique:users',
-            'telefone' => 'nullable|string|max:20', // O telefone é opcional
-            // 'cep' => 'required|string|max:10',
-            // 'logradouro' => 'required|string|max:255',
-            // 'numero' => 'required|string|max:10',
-            // 'complemento' => 'nullable|string|max:255', // O complemento é opcional
-            // 'bairro' => 'required|string|max:255',
-            // 'cidade' => 'required|string|max:255',
-            // 'estado' => 'required|string|max:255',
+            'telefone' => 'required|string|max:20',
+            'cep' => 'required|string|max:10',
+            'logradouro' => 'required|string|max:255',
+            'numero' => 'required|string|max:10',
+            'complemento' => 'nullable|string|max:255', // O complemento é opcional
+            'bairro' => 'required|string|max:255',
+            'cidade' => 'required|string|max:255',
+            'estado' => 'required|string|max:255',
             // 'cargo' => 'required|string|max:255',
             // 'midia' => 'required|string|max:255',
             // 'editoria1' => 'required|string|max:255',
@@ -48,25 +49,33 @@ class ContatoController extends Controller
 
         error_log('Im here');
         // Criar um novo contato com os dados do formulário
-        $contato = new Contato();
         $nome_completo = NomeCompleto::create([
             'nome' => $request->primeiro_nome,
             'sobrenome' => $request->sobrenome,
         ]);
+        
+        $endereco = Endereco::create([
+            'cep' => $request->cep,
+            'logradouro' => $request->logradouro,
+            'numero' => $request->numero,
+            'complemento' => $request->complemento,
+            'bairro' => $request->bairro,
+            'cidade' => $request->cidade,
+            'estado' => $request->estado
+        ]);
 
-        $contato->id_nome_completo = $nome_completo->id;
+        $cargo = 
+        
+        $contato = new Contato();
+        $contato->id_nome_completo = $nome_completo->id; // Supondo que a chave estrangeira na tabela de Contato seja nome_completo_id
+        $contato->id_endereco = $endereco->id; // Supondo que a chave estrangeira na tabela de Contato seja endereco_id
         $contato->data_nascimento = $request->data_nascimento;
         $contato->email = $request->email;
         $contato->telefone = $request->telefone;
-        // $contato->cep = $request->cep;
-        // $nome_completo= new NomeCompleto();
-        // $nome_completo->nome = $request->primeiro_nome;
-        // $nome_completo->sobrenome = $request->sobrenome;
-        // $contato->nome_completo()->associate($nome_completo);
-        // $contato->nome_completo = new NomeCompleto();
-        // $contato->nome_completo->nome = $request->primeiro_nome;
-        // $contato->nome_completo->sobrenome = $request->sobrenome;
         $contato->save();
+        //$contato->nome_completo = new NomeCompleto();
+        //$contato->nome_completo->nome = $request->primeiro_nome;
+        //$contato->nome_completo->sobrenome = $request->sobrenome;
 
         error_log('after save');
         // $user->primeiro_nome = $request->primeiro_nome;

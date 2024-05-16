@@ -16,7 +16,7 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Rota para contatos
 Route::get('/contato', [ContatoController::class, 'index'])->name('contato');
-Route::post('/contato', [ContatoController::class, 'register'])->name('registrar');
+Route::post('/registrar', [ContatoController::class, 'register'])->name('registrar');
 
 // // Rota para upload de arquivos
 // Route::post('/upload', function(Request $request) {
@@ -33,5 +33,11 @@ Route::get('/login', function () {
 Route::get('/terms', function () {
     return view('terms');
 })->name('terms');
+
+//Rota para formulário enviado com sucesso
+
+Route::get('/cadastro-enviado', function () {
+    return view('cadastro-enviado');
+});
 
 // Outras rotas existentes...

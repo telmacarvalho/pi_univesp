@@ -17,13 +17,13 @@ class Contato extends Model
         'data_nascimento',
         'email',
         'telefone',
-        // 'cep',
-        // 'logradouro',
-        // 'numero',
-        // 'complemento',
-        // 'bairro',
-        // 'cidade',
-        // 'estado',
+        'id_endereco',
+        'logradouro',
+        'numero',
+        'complemento',
+        'bairro',
+        'cidade',
+        'estado'
         // 'cargo',
         // 'midia',
         // 'editoria1',
@@ -40,4 +40,12 @@ class Contato extends Model
     public function nome_completo(){
         return $this->hasOne(NomeCompleto::class, 'id', 'id_nome_completo');
     }
+    public function endereco(){
+        return $this->hasOne(Endereco::class, 'id', 'id_endereco');
+    }
+    public function nomeCompleto()
+    {
+        return $this->belongsTo(NomeCompleto::class);
+    }
+
 }
