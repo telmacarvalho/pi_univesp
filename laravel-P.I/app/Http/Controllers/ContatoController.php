@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cargo;
 use Illuminate\Http\Request;
 use App\Models\Contato;
 use App\Models\NomeCompleto;
@@ -33,7 +34,7 @@ class ContatoController extends Controller
             'bairro' => 'required|string|max:255',
             'cidade' => 'required|string|max:255',
             'estado' => 'required|string|max:255',
-            // 'cargo' => 'required|string|max:255',
+            'cargo' => 'required|string|max:255',
             // 'midia' => 'required|string|max:255',
             // 'editoria1' => 'required|string|max:255',
             // 'editoria2' => 'nullable|string|max:255', // A segunda editoria é opcional
@@ -64,7 +65,9 @@ class ContatoController extends Controller
             'estado' => $request->estado
         ]);
 
-        $cargo = 
+        $cargo = Cargo::create([
+            'nomeCargo' => $request->cargo
+        ]);
         
         $contato = new Contato();
         $contato->id_nome_completo = $nome_completo->id; // Supondo que a chave estrangeira na tabela de Contato seja nome_completo_id
@@ -72,6 +75,7 @@ class ContatoController extends Controller
         $contato->data_nascimento = $request->data_nascimento;
         $contato->email = $request->email;
         $contato->telefone = $request->telefone;
+        $contato->cargo = $request->cargo;
         $contato->save();
         //$contato->nome_completo = new NomeCompleto();
         //$contato->nome_completo->nome = $request->primeiro_nome;

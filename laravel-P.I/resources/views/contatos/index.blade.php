@@ -58,7 +58,7 @@
             <input type="text" id="estado" name="estado" required>
         </fieldset>
 
-        <!-- <fieldset>
+        <fieldset>
             <legend>Cargo</legend>
             <label for="cargo">Selecione o seu cargo:</label>
             <select id="cargo" name="cargo">
@@ -81,7 +81,7 @@
             </select>
         </fieldset>
 
-        <fieldset>
+             <!-- <fieldset>
             <legend>Trabalha em Mídia</legend>
             <label for="midia">Selecione onde trabalha:</label>
             <select id="midia" name="midia">

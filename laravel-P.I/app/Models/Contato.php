@@ -18,13 +18,7 @@ class Contato extends Model
         'email',
         'telefone',
         'id_endereco',
-        'logradouro',
-        'numero',
-        'complemento',
-        'bairro',
-        'cidade',
-        'estado'
-        // 'cargo',
+        'id_cargo'
         // 'midia',
         // 'editoria1',
         // 'editoria2',
@@ -43,9 +37,12 @@ class Contato extends Model
     public function endereco(){
         return $this->hasOne(Endereco::class, 'id', 'id_endereco');
     }
-    public function nomeCompleto()
-    {
-        return $this->belongsTo(NomeCompleto::class);
+    public function cargo(){
+        return $this->hasOne(Cargo::class, 'id', 'id_cargo');
     }
+    //public function nomeCompleto()
+    //{
+    //    return $this->belongsTo(NomeCompleto::class);
+    //}
 
 }

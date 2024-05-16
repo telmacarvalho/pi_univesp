@@ -80,6 +80,17 @@ CREATE TABLE IF NOT EXISTS `drone_db`.`midia` (
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
+-- -----------------------------------------------------
+-- Table `drone_db`.`cargo`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `drone_db`.`cargo` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nomeCargo` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+
 
 -- -----------------------------------------------------
 -- Table `drone_db`.`nome_completo`
@@ -102,13 +113,14 @@ CREATE TABLE IF NOT EXISTS `drone_db`.`contato` (
   `telefone` INT NOT NULL,
   `e-mail` VARCHAR(45) NOT NULL,
   `id_endereco` INT NULL,
-  `cargo` VARCHAR(19) NULL,
+  `cargo` VARCHAR(45) NULL,
   `id_midia` INT NULL,
   `assunto` VARCHAR(500) NULL,
   `info_extra` VARCHAR(500) NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_contato_nome_completo_idx` (`id_nome_completo` ASC) VISIBLE,
   INDEX `fk_contato_endereco_idx` (`id_endereco` ASC) VISIBLE,
+  INDEX `fk_cargo_nomeCargo_idx` (`nomeCargo` ASC) VISIBLE,
   CONSTRAINT `fk_contato_endereco`
     FOREIGN KEY (`id_endereco`)
     REFERENCES `drone_db`.`endereco` (`id`)
@@ -122,6 +134,11 @@ CREATE TABLE IF NOT EXISTS `drone_db`.`contato` (
   CONSTRAINT `fk_contato_nome_completo`
     FOREIGN KEY (`id_nome_completo`)
     REFERENCES `drone_db`.`nome_completo` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+  CONSTRAINT `fk_contato_nomeCargo`
+    FOREIGN KEY (`id_cargo`)
+    REFERENCES `drone_db`.`cargo` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
